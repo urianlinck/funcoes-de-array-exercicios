@@ -9,5 +9,19 @@ const produtos = [
     { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
     { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
- ]
+ ] 
  
+ const produtosLimpeza = produtos.filter((produto)=>{
+    // if(produto.categoria === "Limpeza"){
+    //     return true
+    // }
+    return produto.categoria === "Limpeza"
+ })
+
+
+//  const nomesProdutos = produtosLimpeza.map((produto) => {
+//     return produto.nome
+.map((produto) => {
+    return produto.nome
+ })
+ console.log(produtosLimpeza)
